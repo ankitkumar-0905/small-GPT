@@ -36,7 +36,7 @@ context = torch.tensor(
 for _ in range(100):
 
     # Last 8 tokens hi model ko denge
-    context_input = context[:, -8:]
+    context_input = context[:, -64:]
 
     # Prediction
     logits = model(context_input)

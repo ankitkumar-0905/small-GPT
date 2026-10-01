@@ -8,7 +8,7 @@ from tokenizer import stoi
 
 vocab_size = len(stoi)
 n_embd = 32
-block_size = 8
+block_size = 64
 num_heads = 4
 num_layers = 4
 

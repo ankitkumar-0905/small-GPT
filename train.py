@@ -34,7 +34,7 @@ val_data = data[split:]
 # 3. Configuration
 # =========================
 
-block_size = 8
+block_size = 64
 batch_size = 4
 
 

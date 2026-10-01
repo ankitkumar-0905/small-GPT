@@ -55,7 +55,7 @@ prompt = st.text_input(
 max_tokens = st.slider(
     "Maximum tokens",
     20,
-    200,
+    500,
     100
 )
 
@@ -83,7 +83,7 @@ if st.button("Generate"):
 
                 for _ in range(max_tokens):
 
-                    context_input = context[:, -8:]
+                    context_input = context[:, -64:]
 
                     logits = model(context_input)
 
